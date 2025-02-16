@@ -24,9 +24,10 @@ async function load_model() {
     return model_full;
 }
 
-async function remove_bg(img_buffer) {
-    var model = await load_model();
+const model = await load_model();
+console.log(model);
 
+async function remove_bg(img_buffer) {
     const session = await ort.InferenceSession.create(model);
     const dims = [1, 3, 1024, 1024];
     const norm_mean = 0.5;
