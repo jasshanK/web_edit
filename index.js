@@ -123,6 +123,7 @@ upload_element.addEventListener("change", function() {
         
         const img_url = URL.createObjectURL(this.files[0]); // set src to blob url
         img.src = img_url;
+        console.log(img.src);
 
         this.files[0].arrayBuffer().then(remove_bg);
     }
