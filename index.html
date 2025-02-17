@@ -11,7 +11,9 @@
     <body>
         <main>
             <h1>Background Removal</h1>
+            <button type="button" id="load_model_btn">load model</button>
             <input type="file" id="upload" accept="image/png"/>
+            <input type="range" min="0" max="255" value="170" class="slider" id="mask_range"/>
             <img id="original_image" src="#">
             <img id="mask_image" src="#">
             <img id="preview_image" src="#">

@@ -1,6 +1,7 @@
 # TODO
 - [ ] CSS 
-- [ ] load model button (with progress bar)
-- [ ] expose background removal tuning to user
+- [x] load model button
+- [x] expose background removal tuning to user
 - [ ] ability to do finer edits with different sized brushes
+- [ ] add feedback on steps (load model progress bar, proper indication of inference)
 
